@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<link rel="shortcut icon" href="images/favicon.png"> 
+
+
+<link rel="stylesheet" href="css/index_top.css">
+<link rel="stylesheet" href="css/index_down.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/query.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- 어도비 폰트 -->
+
+<link rel="stylesheet" href="https://use.typekit.net/jeb7pid.css">
+
+    
+    <title>비비드로우 메인페이지</title>
+</head>
+
+<body>
+    
+
+<!-- 공통상단영역 -->
+
+
+
+<div id="wrap_nav">
+
+    <div id="nav">
+        <ul class="top" >
+            <li class="first"><a href="about.html">ABOUT</a></li>
+            <li><a href="new.html">NEW</a></li>
+            <li><a href="best.html">BEST</a></li>
+            <li><a href="notice.html">NOTICE</a></li>
+            <li class="logo"><a href="index.html"><img src="images/main_logo.png"></a></li>
+        </ul>
+
+        <ul class="etc">
+            <li>
+                <p class="login"><a href="login.html">로그인</a></p>
+                <p><a href="join.html">회원가입</a></p>
+                <p><a href="mypage.html">마이페이지</a></p>
+            </li>
+        </ul>
+    </div>
+
+
+    <span class="toggle-menu" onclick="slideMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+
+    <script>
+        function slideMenu() {
+            let menu = document.querySelector("#nav");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+</div>
+
+<!-- 공통상단영역 -->
+
+
+    <!-- 메인배너 이미지  -->
+
+    <div id="main_banner">
+    
+        <p class="logo"><img src="images/3d_logo.png"></p>
+        <div class="banner-container">
+            <div class="slider" id="slider">
+                <div class="banner" style="background-image: url('images/main_banner.jpg');"></div>
+                <div class="banner" style="background-image: url('images/main_banner2.jpg');"></div>
+                <div class="banner" style="background-image: url('images/main_banner3.jpg');"></div>
+            </div>
+        </div>
+        
+            <p class="left" onclick="prevSlide()"><i class="fa-solid fa-angle-left"></i></p>
+            <p class="right" onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        
+        <script>
+           let index = 0;
+    const slideWidth = 1280; // 슬라이드 너비
+
+    function showSlide() {
+        document.getElementById('slider').style.transform = `translateX(${-index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+        index = (index + 1) % 3;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + 3) % 3;
+        showSlide();
+    }
+
+        </script>
+
+
+    <!-- 베스트 제품군 영역 -->
+
+    <div id="best_section">
+
+        <h2>BEST</h2>
+
+        <ul>
+            <li class="img">
+                <p class="img"><img src="images/cherry.jpg"></p>
+                <h3>[광채케어] 비비드로우 체리 콜라겐 퍼밍<br>
+                    캡슐 앰플 40ml
+                </h3>
+
+            </li>
+
+            <li class="txt">
+                <p class="txt"><span>35,000원</span>24,500원</p>
+                <p class="btn1">#초저분자</p>
+                <p class="btn2">#탄력앰플</p>
+            </li>
+        </ul>
+
+        <ul>
+            <li class="img">
+                <p class="img"><img src="images/tomato.png"></p>
+                <h3>[광채케어] 비비드로우 체리 콜라겐 퍼밍<br>
+                    캡슐 앰플 40ml
+                </h3>
+
+            </li>
+
+            <li class="txt">
+                <p class="txt"><span>35,000원</span>24,500원</p>
+                <p class="btn1">#투명광채</p>
+                <p class="btn2">#광채앰플</p>
+            </li>
+        </ul>
+
+        
+        <ul>
+            <li class="img">
+                <p class="img"><img src="images/boban.png"></p>
+                <h3>[매끈수분결] 비비드로우 바오밥 하이드<br>
+                    로겔 투 드롭 앰플 40ml
+                </h3>
+
+            </li>
+
+            <li class="txt">
+                <p class="txt"><span>35,000원</span>24,500원</p>
+                <p class="btn1">#매끈피부결</p>
+                <p class="btn2">#수분앰플</p>
+            </li>
+        </ul>
+
+
+    </div>
+
+
+    <!-- 이벤트 배너 2종  -->
+
+    <div id="event_section">
+        <h2>EVENT</h2>
+        <ul>
+            <li>
+                <p><a href="#a"><img src="images/event.jpg"></a></p>
+            </li>
+
+            <li>
+                <p><a href="#a"><img src="images/event2.jpg"></a></p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- all 제품군 영역  -->
+
+    <div id="all_section">
+        <h2>ALL</h2>
+
+        <ul>
+            <li>
+                <p><a href="#a"><img src="images/mask.jpg"></a></p>
+            </li>
+            <li>
+                <p><a href="#a"><img src="images/all2.jpg"></a></p>
+            </li>
+
+            <li>
+                <p><a href="#a"><img src="images/all3.jpg"></a></p>
+            </li>
+
+            <li>
+                <p><a href="#a"><img src="images/all4.jpg"></a></p>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="brand-story">
+        <ul>
+            <li>
+                <p class="model"><img src="images/brand_model.png"></p>
+            </li>
+
+            <li class="logo">
+                <!-- <p><img src="images/down_logo.png"></p> -->
+            </li>
+
+            <li>
+                <p class="btn"><a href="about.html">
+                    <img src="images/brand_3d.png"></a></p>
+            </li>
+        </ul>
+    </div>
+
+
+<div id="wrap_copyright">
+    <div id="copyright">
+        <ul class="logo">
+            <li>
+                <p class="logo"><img src="images/white_logo.png"></p>
+            </li>
+        </ul>
+
+        <ul class="down_menu">
+            <li class="down">
+                <p><a href="#a">브랜드 소개</a></p>
+                <p><a href="#a">채용정보</a></p>
+                <p><a href="#a">이용약관</a></p>
+                <p><a href="#a">개인정보처리방침</a></p>
+                <p><a href="#a">고객센터</a></p>
+                <p><a href="#a">제휴문의</a></p>
+            </li>
+
+            <li class="copy">
+                <p>(주)고운세상코스메틱</p><br>
+                <p>경기도 성남시 분당구 분당로 55 퍼스트타워 11층</p>
+                <br>
+                <p>대표이사 이주호 　사업자등록번호 209-81-23948 　통신판매업신고번호 2012-경기성남-0552</p>
+            </li>
+
+            <li class="c1">
+                <p><a href="#a">사업자정보확인 〉</a></p>
+                <p><a href="#a">지속가능경영보고서 〉</a></p>
+            </li>
+        </ul>
+
+        <ul class="sns">
+            <li>
+                <p><a href="#a"><i class="fa-solid fa-comment"></i></a></p>
+                <p><a href="#a"><i class="fa-brands fa-youtube"></i></a></p>
+                <p><a href="#a"><i class="fa-brands fa-facebook-f"></i></a></p>
+                <p><a href="#a"><i class="fa-brands fa-instagram"></i></a></p>
+            </li>
+
+            <li>
+                <p>고객센터 <strong>1811-9415</strong></p><br><br>
+                <h3>평일 : 09:30 ~ 17:00 <br>
+                    점심 : 12:30 ~ 13:30 <br>
+                    (매주 수요일 12:00 ~ 14:00)<br><br>
+
+                    토요일, 일요일 공휴일 휴무입니다.
+                </h3>
+            </li>
+        </ul>
+
+        <ul class="down_copy">
+            <li>
+                <h2>COPYRIGHT ⓒ GOWOONSESANG COSMETICS Co.,Ltd. ALL RIGHTS RESERVED.</h2>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+    <div id="top_btn"><a href="#">
+        <p><i class="fa-solid fa-arrow-up"></i></a></p>
+    </div>
+</div>
+</body>
+</html>

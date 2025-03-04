@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style:none;
+}
+
+div {
+    margin: 0 auto;
+}
+
+/* 기본설정 */
+
+/* 폰트 */
+
+/* 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 어도비 폰트 */
+/* font-family: "cooper-black-std", serif;
+font-weight: 400;
+font-style: normal; */
+
+
+
+/* 베스트 상품 영역 */
+
+#best-section {
+     width: 1280px; height: 1250px;
+     background: #ffff;
+     text-align: center;
+}
+
+#best-section h1 {
+    font-family: 'Pretendard-Regular';
+    font-size: 50px;
+    letter-spacing: -2px;
+    color: #111;
+    font-weight: normal;
+
+    padding-top: 100px;
+
+    animation: text 2s infinite alternate;
+}
+
+
+@keyframes text {
+     0% {transform: translateY(-50px);}
+     100% {transform: translateY(0);}
+}
+
+#best-section h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 32px;
+    letter-spacing: -1px;
+    color: #111;
+    font-weight: normal;
+
+    padding-top: 20px;
+}
+
+/* 베스트 앰플 */
+
+#best-section ul {
+     width: 1280px; height: 1000px;
+     
+     margin-top: 150px;
+}
+
+#best-section ul li { 
+    text-align: left;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#best-section ul li {
+
+    width: 400px; height: 800px;
+   
+     position: relative;
+}
+
+#best-section ul li p.number {
+     width: 80px; height: 80px;
+     background: #fec42e;
+
+     font-size: 42px;
+     line-height: 80px;
+     text-align: center;
+     color: #fff;
+     font-family: 'Pretendard-Regular';
+
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     z-index: 999;
+}
+
+#best-section ul li p.number2 {
+    width: 80px; height: 80px;
+    background: #ccc;
+
+    font-size: 42px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+}
+
+#best-section ul li p.btn {
+     padding: 5px 15px;
+     background: #fb743b;
+     display: inline-block;
+     border-radius: 50px;
+
+     font-size: 18px;
+     color: #fff;
+     font-family: 'Pretendard-Regular';
+     letter-spacing: -1px;
+
+     text-align: left;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+#best-section ul li p.name {
+    font-size: 28px;
+    color: #111;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#best-section ul li h3 span {
+     font-size: 20px;
+     color: #999;
+     font-weight: normal;
+     text-decoration: line-through;
+     font-family: 'Pretendard-Regular';
+
+     padding-right: 15px;
+    vertical-align: middle;
+
+}
+
+#best-section ul li h3 {
+     padding-top: 20px;
+     padding-left: 20px;
+
+     font-size: 30px;
+     color: #111;
+     font-weight: normal;
+     letter-spacing: -1px;
+     font-weight: bold;
+}
+
+#best-section ul li p.circle {
+     width: 150px; height: 50px;
+     border: 1px solid #000;
+     border-radius: 50px;
+
+     font-size:24px;
+     line-height: 50px;
+     text-align: center;
+     font-family: 'Pretendard-Regular';
+
+     display: inline-block;
+     vertical-align: middle;
+
+     margin-top: 20px;
+     margin-left: 10px;
+}
+
+
+/* 호버 이미지 */
+
+.img_1 {
+    cursor: pointer;
+    position: relative;
+    width: 300px; /* 원하는 이미지 크기로 변경 */
+    height: 360px; /* 원하는 이미지 크기로 변경 */
+    background-image: url(../images/best/best_img1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.img_2{
+    cursor: pointer;
+    position: relative;
+    width: 300px; /* 원하는 이미지 크기로 변경 */
+    height: 360px; /* 원하는 이미지 크기로 변경 */
+    background-image: url(../images/best/best_img2.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.img_3 {
+    cursor: pointer;
+    position: relative;
+    width: 350px; /* 원하는 이미지 크기로 변경 */
+    height: 360px; /* 원하는 이미지 크기로 변경 */
+    background-image: url(../images/best/best_img3.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.img_1, .img_2,.img_3 img {
+    width: 350px;
+    display: block;
+
+    cursor: pointer;
+}
+
+.img2 {
+    position: absolute;
+    top:300px;
+    left: 0;
+    width: 350px;
+    height: 60px; /* 오버레이 높이 */
+    background-color: rgba(0, 150, 255, 0.8); /* 푸른색 반투명 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    color: #fff;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+li:hover .img2 {
+    opacity: 1;
+}
+
+li:hover .img_1 {
+    background-image: url('../images/best/best_img1_r.jpg'); /* hover 시 이미지 변경 */
+}
+li:hover .img_2{
+    background-image: url('../images/best/best_img2_r.jpg'); /* hover 시 이미지 변경 */
+}
+li:hover .img_3{
+    background-image: url('../images/best/best_img3_r.jpg'); /* hover 시 이미지 변경 */
+}
+
+
+/* 베스트 리뷰 영역 */
+
+#best-review {
+     width: 1280px; height: 900px;
+     background: #fff;
+     text-align: center;
+}
+
+#best-review h1 {
+    font-family: 'Pretendard-Regular';
+    font-size: 50px;
+    letter-spacing: -2px;
+    color: #111;
+    font-weight: normal;
+
+    margin-bottom: 50px;
+
+    animation: text 2s infinite alternate;
+
+}
+
+#best-review ul {
+     width: 100%; height: 500px;
+     background: #f2f4f7;
+
+     margin-top: 50px;
+}
+
+#best-review ul li {
+     width: 260px; height: 430px;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+
+     display: inline-block;
+     vertical-align: middle;
+     margin-right: 30px;
+     margin-top: 35px;
+}
+
+#best-review ul li h3 {
+     font-size: 14px;
+     font-weight: normal;
+     font-family: 'Pretendard-Regular';
+     color: #777;
+
+     padding-top: 20px;
+
+     text-align: left;
+     padding-left: 10px;
+}
+
+#best-review ul li p.img img {
+    width: 256px; height: 270px;
+     border-bottom: 1px solid #ccc;
+     box-sizing: border-box;
+}
+
+#best-review ul li p.user {
+     font-size: 16px; 
+     font-weight: normal;
+     font-family: 'Pretendard-Regular';
+     color: #777;
+     padding-bottom: 10px;
+    padding-top: 10px;
+     text-align: left;
+     padding-left: 10px;
+}
+
+#best-review ul li p.line {
+     width: 230px; height: 1px;
+     background: #ccc;
+     margin: 0 auto;
+     margin-bottom: 10px;
+}
+
+#best-review ul li p.name {
+    font-size: 16px; 
+    font-weight: normal;
+    font-family: 'Pretendard-Regular';
+    color: #333;
+    letter-spacing: -1px;
+}

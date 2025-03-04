@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style:none;
+}
+
+div {
+    margin: 0 auto;
+}
+
+/* 기본설정 */
+
+/* 폰트 */
+
+/* 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 어도비 폰트 */
+/* font-family: "cooper-black-std", serif;
+font-weight: 400;
+font-style: normal; */
+
+#baobab {
+     width: 1280px; height: auto;
+     background: #fff;
+
+     text-align: center;
+}
+
+
+#baobab li {
+     margin-bottom: 50px;
+}

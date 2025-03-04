@@ -1,0 +1,213 @@
+/* 
+공통 하단 영역 카피라이트  */
+
+#wrap_copyright {
+     width: 100%; height: 100%;
+     background: #111;
+}
+
+
+#copyright {
+    width: 1280px; height: 432px;
+    background: #111;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+#copyright ul {
+    width: auto; height: 330px;
+    
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+/* 로고 영역 */
+
+#copyright ul.logo li p.logo {
+   position: absolute;
+
+   top: 100px;
+   left: 40px;
+}
+
+
+/* 하단 메뉴 영역 */
+
+
+#copyright ul.down_menu li.down {
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+#copyright ul.down_menu li.down p {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: auto; height: 60px;
+    
+
+    margin-right: 25px;
+
+}
+
+#copyright ul.down_menu li.down p a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular';
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+/* 하단 주소 및 사업자등록번호 영역 */
+
+#copyright ul.down_menu li.copy {
+    position: absolute;
+
+    top: 130px;
+    left: 230px;
+}
+
+#copyright ul.down_menu li.copy p { 
+   display: inline-block;
+   vertical-align: middle;
+
+   line-height: 1.7;
+
+   color: #fff;
+   font-family: 'Pretendard-Regular';
+   letter-spacing: -1px;
+   font-size: 18px;
+
+}
+
+#copyright ul.down_menu li.copy p a { 
+   font-size: 16px;
+   font-family: 'Pretendard-Regular';
+}
+
+/* 사업자정보확인 / 지속가능경영보고서 */
+
+#copyright ul.down_menu li.c1 {
+    position: absolute;
+    
+    top: 250px;
+    right: 400px;
+}
+
+#copyright ul.down_menu li.c1 p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#copyright ul.down_menu li.c1 p a {
+    padding: 10px 10px;
+    border:1px solid #fff;
+
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+
+}
+
+
+/* sns 및 고객센터 영역 */
+
+#copyright ul.sns {
+    width: 240px; height: 240px;
+    
+    text-align: center;
+
+    margin-top: -50px;
+    margin-left: 40px;
+}
+
+#copyright ul.sns p {
+   display: inline-block;
+   vertical-align: middle;
+
+   text-align: left;
+
+   margin-top: 20px;
+   font-family: 'Pretendard-Regular';
+   color: #fff;
+   font-size: 20px;
+}
+
+
+#copyright ul.sns li p img {
+    width: 30px; height: 30px;
+   vertical-align: middle;
+    
+}
+
+#copyright ul.sns li p i {
+    padding-right: 10px;
+    font-size: 25px;
+
+    color: #fff;
+}
+
+#copyright ul.sns h3 {
+    text-align: left;
+
+    color: #999;
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 하단 카피 문구  */
+
+#copyright ul.down_copy {
+   width: auto; height: 50px;
+   text-align: center;
+   margin: 0 auto;
+
+}
+
+#copyright ul.down_copy li h2 {
+   text-align: center;
+
+   color: #fff;
+   font-size: 18px;
+   font-weight: normal;
+   letter-spacing: -1px;
+   font-family: 'Pretendard-Regular';
+
+margin-left: 350px;
+
+
+}
+
+#top_btn p {
+    display: block; 
+     width: 50px; height: 50px;
+     background: #d20a2e;
+     border-radius: 100%;
+
+     text-align: center;
+
+     position: fixed;
+
+     bottom: 50px;
+     right: 50px;
+
+     z-index: 999;
+
+     cursor: pointer;
+
+     
+
+} 
+
+#top_btn p i {
+     line-height: 50px;
+     font-size: 38px;
+     color: #fff;
+     
+
+
+}

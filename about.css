@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style:none;
+}
+
+div {
+    margin: 0 auto;
+}
+
+/* 기본설정 */
+
+/* 폰트 */
+
+/* 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 어도비 폰트 */
+/* font-family: "cooper-black-std", serif;
+font-weight: 400;
+font-style: normal; */
+
+
+/* 어바웃 이미지 및 시작 */
+
+#about_main {
+     width: 1280px; height: 2030px;
+     background: #fff;
+     text-align: center;
+}
+
+#about_main ul li p.img {
+     padding-top: 120px;
+     padding-bottom: 100px;
+     scale: 1.2;
+}
+
+#about_main h2 {
+    font-family: 'Cafe24Nyangi-W-v1.0';
+    font-size: 100px;
+    letter-spacing: -8px;
+    font-weight: normal;
+}
+
+#about_main pre {
+     font-size: 36px;
+     color: #111;
+     letter-spacing: -2px;
+     font-family: 'Pretendard-Regular';
+     line-height: 1.4;
+}
+
+#about_main ul.circle li p.circle {
+     width: 870px; height: 135px;
+     border: 3px solid #000;
+     border-radius: 100%;
+
+     margin: 0 auto;
+     margin-top: 30px;
+
+     font-size: 52px;
+     font-family: 'DungGeunMo';
+     letter-spacing: -2px;
+     line-height: 135px;
+}
+
+/* 어바웃 메인 버전 2  */
+
+#about_main2 {
+     width: 1280px; height: 2045px;
+     background: #fff;
+     text-align: center;
+}
+
+#about_main2 pre {
+    font-size: 36px;
+    color: #111;
+    letter-spacing: -2px;
+    font-family: 'Pretendard-Regular';
+    line-height: 1.4;
+    padding-top: 80px;
+}
+
+#about_main2 pre span {
+     font-weight: bold;
+     font-size: 40px;
+}
+
+/* 프로미스 3가지 */
+
+#we_promise {
+     width: 1280px; height: 2500px;
+     background: #fff;
+     text-align: center;
+    
+}
+
+#we_promise ul li h1 {
+    font-family: 'SF_HambakSnow';
+    font-size: 82px;
+    color: #000;
+    letter-spacing: -3px;
+    font-weight: normal;
+
+    margin-top: -120px;
+    margin-bottom: 100px;
+     
+}
+
+#we_promise ul li.circle h2 {
+    width: 700px; height: 120px;
+    border: 3px solid #000;
+    border-radius: 100%;
+
+    margin: 80px auto;
+   
+    font-size: 68px;
+    font-weight: bold;
+    font-family: 'NotoSerifKR';
+    letter-spacing: -3px;
+    line-height: 120px;
+}
+
+#we_promise ul li.circle pre {
+    font-size: 34px;
+    color: #111;
+    letter-spacing: -2px;
+    font-family: 'Pretendard-Regular';
+    line-height: 1.4;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+#we_promise ul li.circle pre span { 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* 하단 문구 */
+
+#down_txt {
+     width: 1280px; height: 1500px;
+     background: #fff;
+     text-align: center;
+     
+}
+
+#down_txt ul li h1 {
+    font-family: 'SF_HambakSnow';
+    font-size: 82px;
+    color: #000;
+    letter-spacing: -5px;
+    font-weight: normal;
+    text-decoration: double;
+
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    display: inline-block;
+     
+}
+
+#down_txt ul li pre {
+    font-size: 34px;
+    color: #111;
+    letter-spacing: -2px;
+    font-family: 'Pretendard-Regular';
+    line-height: 1.4;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+#down_txt ul li pre span {
+     font-size: 40px;
+     font-weight: bold;
+     letter-spacing: -3px;
+}
+
+/* 비비드로우 컬러 로고 */
+
+#color { 
+    width: 1280px; height: 500px;
+    background: #fff;
+    text-align: center;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+#color p {
+    text-align: center;
+
+    font-family: 'Cafe24Nyangi-W-v1.0';
+    font-size: 120px;
+    letter-spacing: -3px;
+    font-weight: normal;
+
+    margin-top: -100px;
+
+}
+
+#color p.b {
+     color: #000;
+     position: absolute;
+
+     top: 90px;
+     left: 80px;
+    }
+     
+
+
+#color p.r {
+    color: #d20a2e;
+    position: absolute;
+
+    top: 130px;
+    left: 80px;
+}
+
+#color p.g {
+    color: #71f6b6;
+    position: absolute;
+
+    top: 170px;
+    left: 80px;
+}

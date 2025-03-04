@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style:none;
+}
+
+div {
+    margin: 0 auto;
+}
+
+/* 기본설정 */
+
+/* 폰트 */
+
+/* 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 어도비 폰트 */
+/* font-family: "cooper-black-std", serif;
+font-weight: 400;
+font-style: normal; */
+
+
+
+#login {
+     width: 1280px; height: 1000px;
+     background: #fff;
+     text-align: center;
+
+     box-sizing: border-box;
+
+}
+
+#login h1 { 
+    font-family: 'Cafe24Decobox';
+    font-size: 80px;
+    margin-top: 100px;
+    letter-spacing: -3px;
+    font-weight: normal;
+    color: #111;
+}
+
+
+#login fieldset {
+    border: 0;
+}
+
+#login fieldset input[type="text"] {
+     width: 600px; height: 100px;
+     background: #fcc3c3;
+     border: 0;
+     margin-bottom: 30px;
+     margin-top: 100px;
+
+
+}
+
+#login fieldset input[type="password"] {
+    width: 600px; height: 100px;
+    background: #fcc3c3;
+    border: 0;
+    
+
+}
+
+#login fieldset ul li p {
+     display: inline-block;
+     vertical-align: middle;
+     margin-top: 15px;
+}
+
+#login fieldset ul li p.id {
+     margin-left: 380px;
+}
+
+#login fieldset ul li p.line {
+     width: 1px; height: 20px;
+     background: #ccc;
+     margin: 0 10px;
+     margin-top: 15px
+}
+
+
+#login fieldset p a {
+     font-size: 20px;
+     color: #000;
+     font-family: 'Pretendard-Regular';
+     letter-spacing: -1px;
+
+
+}
+
+#login fieldset input[type="submit"] {
+     width: 600px; height: 110px;
+     background: #fc4141;
+     border: 0;
+     margin-top: 50px;
+
+     font-size: 30px;
+     font-weight: normal;
+     font-family: 'Pretendard-Regular';
+     color: #fff;
+}
+
+input[placeholder] {
+    font-size: 24px;
+    padding-left: 15px;
+    letter-spacing: -1px;
+    font-family: 'Pretendard-Regular';
+}
+
+::placeholder {
+    color: #666;
+   }
+
+
+#login fieldset button {
+     width: 290px; height: 80px;
+     border: 1px solid #000;
+     background: #fff;
+     margin-top: 30px;
+     
+
+     font-size: 24px;
+    font-weight: bold;
+     letter-spacing: -1px;
+     font-family: 'Pretendard-Regular';
+}
+
+#login fieldset button.b1 {
+     margin-right: 20px;
+}
