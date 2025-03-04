@@ -1,4 +1,6 @@
-git lfs install
-git lfs track "*.zip"
-git add .gitattributes
-출처: https://tjkpolisher.tistory.com/51 [AI개발세발:티스토리]
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/내아이디/my-website.git
+git push -u origin main
